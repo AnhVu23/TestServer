@@ -25,13 +25,23 @@ Return a list of all appIDs.
 
 `/app/:appID`
  
-Return all data for given `appID`. Number of rows differ between appIDs. 
-
+Return all data for given `appID`. Number of rows differ between appIDs.
 
 `/app/:appID/:field`
- 
+
 Return all data for given `field` for given `appID`.
 
+`/fields/:field`
+
+Return all data for given `field`
+
+`/buildVer/`
+
+Return all data for given `buildVer` for given `buildName` (query params like `?buildName=${buildNameValue}`
+
+`/buildVer/:field`
+
+Return all data for given `field`. Adding query params like `?buildVer=${buildVerValue}` to get exact `field` for certain buildVer.
 
 `/fields`
  
